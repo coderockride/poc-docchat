@@ -1,6 +1,3 @@
-Got it. Paste this **as-is** into `README.md`.
-
-````md
 # poc-docchat
 
 A small portfolio project that demonstrates a document-aware chat application built with React and FastAPI.
@@ -63,7 +60,7 @@ cd server
 python3.12 -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
-````
+```
 
 Create `server/.env` if you do not already have one:
 
@@ -90,8 +87,8 @@ npm run dev
 
 Open:
 
-* Frontend: [http://localhost:5173](http://localhost:5173)
-* Backend health check: [http://127.0.0.1:8000/health](http://127.0.0.1:8000/health)
+- Frontend: http://localhost:5173
+- Backend health check: http://127.0.0.1:8000/health
 
 ## Example test file
 
@@ -104,6 +101,3 @@ The internal sponsor is Dr. Elena Park.
 Example question:
 
 `Who is the internal sponsor for Project Iris?`
-
-```
-```
