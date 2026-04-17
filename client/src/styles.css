@@ -1,0 +1,136 @@
+:root {
+  /* Global font and default page colors */
+  font-family: Inter, system-ui, sans-serif;
+  color: #111827;
+  background: #f8fafc;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+button {
+  cursor: pointer;
+}
+
+.app-shell {
+  min-height: 100vh;
+}
+
+.topbar {
+  padding: 20px 24px;
+  border-bottom: 1px solid #e5e7eb;
+  background: white;
+}
+
+.topbar h1 {
+  margin: 0 0 4px 0;
+}
+
+.topbar p {
+  margin: 0;
+  color: #6b7280;
+}
+
+.layout {
+  /* Two-column layout: sidebar on the left, chat on the right */
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  gap: 16px;
+  padding: 16px;
+}
+
+.sidebar,
+.main-panel {
+  min-height: calc(100vh - 110px);
+}
+
+.card,
+.chat-shell,
+.status-card {
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 14px;
+  padding: 16px;
+  margin-bottom: 16px;
+}
+
+.chat-shell {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.messages {
+  flex: 1;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.message {
+  padding: 12px;
+  border-radius: 12px;
+  max-width: 85%;
+}
+
+.message.user {
+  align-self: flex-end;
+  background: #dbeafe;
+}
+
+.message.assistant {
+  align-self: flex-start;
+  background: #f3f4f6;
+}
+
+.message-role {
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #6b7280;
+  margin-bottom: 4px;
+}
+
+.composer {
+  display: flex;
+  gap: 8px;
+}
+
+.composer input {
+  flex: 1;
+  padding: 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 10px;
+}
+
+.composer button,
+.card button {
+  padding: 10px 14px;
+  border: none;
+  border-radius: 10px;
+  background: #111827;
+  color: white;
+}
+
+.source-list {
+  padding-left: 18px;
+}
+
+.source-list p {
+  margin-top: 4px;
+  color: #4b5563;
+  font-size: 14px;
+}
+
+@media (max-width: 900px) {
+  /* Stack the layout vertically on smaller screens */
+  .layout {
+    grid-template-columns: 1fr;
+  }
+}
