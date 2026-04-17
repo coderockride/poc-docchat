@@ -1,4 +1,4 @@
-# poc-docchat
+# Document Chat (RAG Prototype v1)
 
 A small portfolio project that demonstrates a document-aware chat application built with React and FastAPI.
 
