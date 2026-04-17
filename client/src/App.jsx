@@ -71,7 +71,7 @@ export default function App() {
     <div className="app-shell">
       <header className="topbar">
         <div>
-          <h1>poc-docchat</h1>
+          <h1>Document Chat (RAG Prototype v1)</h1>
           <p>React + FastAPI document chat starter</p>
         </div>
       </header>
